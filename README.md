@@ -1,13 +1,14 @@
-# CrateCamDB (UNDER CONTRUCTION!)
-Camera Database for Crate Asset Browser
+# CrateCamDB
 
 A curated, open camera sensor database for VFX, matchmove, and virtual production work.
 
-CrateCamDB is the camera reference database used by [Crate](https://github.com/cratetools/crate), a Nuke pipeline tool. It is maintained as a standalone repository so it can be used, contributed to, and integrated into other tools independently of Crate itself.
+CrateCamDB is the camera reference database used by [Crate](https://github.com/CrateTools/Crate), a Nuke pipeline tool. It is maintained as a standalone repository so it can be used, contributed to, and integrated into other tools independently of Crate itself.
 
 ## What's in here
 
-A single JSON file — `crate_cameras.json` — containing sensor specifications for hundreds of digital cinema cameras, broadcast cameras, drones, mobile phones, film formats, and bare sensors. Each camera entry includes:
+A single JSON file — `crate_cameras.json` — containing sensor specifications for hundreds of digital cinema cameras, broadcast cameras, drones, mobile phones, film formats, and bare sensors.
+
+Each camera entry includes:
 
 - Manufacturer and model name
 - Sensor type and shutter mechanism (where known)
@@ -19,7 +20,7 @@ A single JSON file — `crate_cameras.json` — containing sensor specifications
 
 ## Schema
 
-The JSON has two top-level keys:
+The JSON has two top-level keys: `_metadata` and `cameras`.
 
 ```json
 {
@@ -27,10 +28,10 @@ The JSON has two top-level keys:
     "version": "2.0.0",
     "last_updated": "2026-05-15",
     "camera_count": 334,
-    "credits": "...",
+    "credits": "Camera reference data derived in part from VFXCamDB.com (Tony D'Agostino), used with permission. Curation and additional data by CrateTools.",
     "license": "CC-BY-4.0",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    "source": "https://github.com/cratetools/CrateCamDB"
+    "source": "https://github.com/CrateTools/CrateCamDB"
   },
   "cameras": {
     "arri-alexa-35": {
@@ -54,13 +55,13 @@ The JSON has two top-level keys:
 }
 ```
 
-Camera keys are slugs: lowercase, hyphen-separated, machine-stable. They are intended to be reliable lookup identifiers and should not be renamed once published. The human-readable name lives in the `name` field.
+Camera keys are slugs: lowercase, hyphen-separated, machine-stable. They are intended as reliable lookup identifiers and should not be renamed once published. The human-readable name lives in the `name` field.
 
 ## How to use this database
 
 ### In your own tool
 
-Pull `crate_cameras.json` directly. The schema is stable and documented above. Standard library JSON parsing is sufficient — no special dependencies required.
+Pull `crate_cameras.json` directly. The schema is stable and documented above. Python's standard library is sufficient — no external dependencies required.
 
 ```python
 import json
@@ -75,7 +76,7 @@ print(alexa["name"], alexa["sensor_dimensions"][0]["width_mm"])
 
 ### In Crate
 
-Crate ships with a snapshot of CrateCamDB and includes an *"Import JSON from CrateTools"* button in Settings → Camera Database that lets curators pull the latest version on demand.
+Crate ships with a snapshot of CrateCamDB. The Settings → Camera Database panel includes an **"Import JSON from CrateTools"** button that pulls the latest version from this repository on demand, merging new and corrected entries into the curator's local database.
 
 ### As a fetch endpoint
 
