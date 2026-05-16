@@ -1,4 +1,4 @@
-# CrateCamDB
+# CrateCamDB (UNDER CONTRUCTION!)
 Camera Database for Crate Asset Browser
 
 A curated, open camera sensor database for VFX, matchmove, and virtual production work.
