@@ -163,7 +163,7 @@ If you find an error, please open an issue — accuracy is the whole point.
 ## Acknowledgments
 
 - **Tony D'Agostino** of [VFXCamDB.com](https://vfxcamdb.com), whose decade-plus of community work made this database possible.
-- **[Matchmove machine](https://camdb.matchmovemachine.com/)** by **Matchmove machine**.
+- **[Matchmove machine](https://camdb.matchmovemachine.com/)** by **Matchmove machine** that has been the most reliable and complete reference recently for digital cinema sensor sizes.
 - The VFX, matchmove, and virtual production community, whose collective tracking, calibration, and bug-reporting work is the substrate this kind of reference data rests on.
 
 ---
