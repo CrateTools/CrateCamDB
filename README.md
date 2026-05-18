@@ -140,13 +140,15 @@ If you've modified entries:
 
 ### Upstream attribution
 
-This database is derived in part from **[VFXCamDB.com](https://vfxcamdb.com)**, maintained by **Tony D'Agostino** since 2010, and is used with his permission.
+This database is derived in part from **[VFXCamDB](https://vfxcamdb.com)** maintained by **Tony D'Agostino** and **[Matchmove machine](https://camdb.matchmovemachine.com/)** maintained by **Matchmove machine**.
 
-VFXCamDB is the foundational community reference for digital cinema sensor specifications and the work CrateCamDB builds on. Downstream users — whether integrating this data into a tool, publishing derivative works, or simply redistributing copies — are strongly encouraged to preserve credit to VFXCamDB alongside CrateCamDB.
+We are genuinely grateful and the Camera module would not exist in its current form without Tony D'Agostino and Matchmove machine work. If you find this data useful, please consider [supporting VFXCamDB](https://vfxcamdb.com/donate/) and [supporting Matchmove machine](https://camdb.matchmovemachine.com/donate) directly.
+
+VFXCamDB and Matchmove machine are the foundational community reference for digital cinema sensor specifications and the work CrateCamDB builds on. Downstream users — whether integrating this data into a tool, publishing derivative works, or simply redistributing copies — are strongly encouraged to preserve credit to VFXCamDB and Matchmove machine alongside CrateCamDB.
 
 A combined attribution might read:
 
-> Camera reference data from CrateCamDB (https://github.com/CrateTools/CrateCamDB), licensed under CC-BY-4.0. Includes data derived from VFXCamDB.com (Tony D'Agostino), used with permission.
+> Camera reference data from CrateCamDB (https://github.com/CrateTools/CrateCamDB), licensed under CC-BY-4.0. Includes data derived from VFXCamDB.com (Tony D'Agostino) and Matchmove machine.
 
 ### Camera manufacturer trademarks
 
