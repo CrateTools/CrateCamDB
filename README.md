@@ -4,6 +4,8 @@ A curated, open camera sensor database for VFX, matchmove, and virtual productio
 
 CrateCamDB is the camera reference database used by [Crate](https://github.com/CrateTools/Crate), a Nuke pipeline tool. It is maintained as a standalone repository so it can be used, contributed to, and integrated into other tools independently of Crate itself.
 
+As of May 2026 the database is being double checked again for over 350 total sensors. If you want to know the last checked camera of the list visit the "Camera checked by Crate up to" Discussion. This process will finish around July/August 2026.
+
 ## What's in here
 
 A single JSON file — `crate_cameras.json` — containing sensor specifications for hundreds of digital cinema cameras, broadcast cameras, drones, mobile phones, film formats, and bare sensors.
