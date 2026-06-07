@@ -1,4 +1,6 @@
-# CrateCamDB under contruction
+<img width="1168" height="212" alt="catecamdb" src="https://github.com/user-attachments/assets/b4eb3677-cdf9-4065-b64c-4c0f6add47d0" />
+
+# CrateCamDB
 
 A curated, open camera sensor database for VFX, matchmove, and virtual production work.
 
